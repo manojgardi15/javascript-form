@@ -29,13 +29,12 @@ function validation() {
         return false;
     }
 
-    if (document.getElementById('accept').checked)
-     { 
+    if (document.getElementById('accept').checked) {
         return true;
-     } 
-     else {
+    }
+    else {
         document.getElementById("condition").innerHTML =
-        "*Checkbox not checked";
-          return false; 
-        }
+            "*Checkbox not checked";
+        return false;
+    }
 }
