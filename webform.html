@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>On-boaring web form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <form action="insert.php" method="post">
+        <div class="container">
+            <div class="text-center mb-3">
+                <h2>On-boaring web form</h2>
+            </div>
+            <br>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="first">First Name:</label>
+                    <input type="text" name="first_name" id="first" class="form-control" placeholder="First name"
+                        required>
+
+                </div>
+                <div class="col">
+                    <label for="last">Last Name:</label>
+                    <input type="text" name="last_name" id="last" class="form-control" placeholder="Last name" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <div>
+                        <label for="gender">Gender:</label>
+                    </div>
+
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="m">
+                    <label class="form-check-label" for="male">
+                        Male
+                    </label>
+
+
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="f">
+                    <label class="form-check-label" for="female">
+                        Female
+                    </label>
+
+
+                    <input class="form-check-input" type="radio" name="gender" id="other" value="o">
+                    <label class="form-check-label" for="other">
+                        Other
+                    </label>
+
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="birth">Birth Date:</label>
+                        <input type='date' name="birth_date" id="birth" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="aadhar">Aadhar Card Number:</label>
+                        <input type='number' name="aadharcard_no" id="aadhar" class="form-control"
+                            placeholder="0000-0000-0000" required>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="dateofjoin">Date Of Join:</label>
+                        <input type='date' name="joining_date" id="dateofjoin" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <label for="designation">Designation:</label>
+                <select class="form-control" name="state" id="designation">
+                    <option>Select Designation</option>
+                    <option>Trainee</option>
+                    <option>Junior Software Developer</option>
+                    <option>Senior Software Developer</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="eid">Email:</label>
+                <input type="email" name="email" id="eid" class="form-control" placeholder="name@gmail.com" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="mobile">Mobile Number:</label>
+                <input type="number" name="mobile_number" id="mobile" class="form-control"
+                    placeholder="Enter 10 digit mobile number" required>
+            </div>
+            <div class="mb-3">
+                <div>
+                    <label for="ads">Address:</label>
+                    <textarea type="text" name="address" id="ads" class="form-control" required></textarea>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="inputcity">City:</label>
+                    <input type="text" name="city" id="inputcity" class="form-control" placeholder="City" required>
+                </div>
+                <div class="col mb-3">
+                    <label for="inputstate">State:</label>
+                    <select class="form-control" name="state" id="inputstate" required>
+                        <option>Select State</option>
+                        <option>Maharastra</option>
+                        <option>Goa</option>
+                        <option>Kerala</option>
+                        <option>utter pradesh</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" class="btn btn-primary" name="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
